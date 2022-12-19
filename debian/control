@@ -1,0 +1,23 @@
+Source: fortunes-hypernode-hints
+Priority: optional
+Section: games
+Maintainer: Hypernode Tech Team <support@hypernode.com>
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: fortune-mod
+Homepage: https://github.com/ByteInternet/fortunes-hypernode-hints
+Vcs-Git: https://github.com/ByteInternet/fortunes-hypernode-hints.git
+Vcs-Browser: https://github.com/ByteInternet/fortunes-hypernode-hints.git
+Rules-Requires-Root: no
+
+Package: fortunes-hypernode-hints
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: fortune-mod
+Provides: fortune-cookie-db
+Multi-Arch: foreign
+Description: Hypernode Hints for fortune
+ This package provides a set of hints and tips on using Hypernode, in a
+ fortune database format. New Hypernode users (or administrators) may find its
+ advice particularly sage or helpful, and even veteran Hypernoders might
+ find some new tidbits.

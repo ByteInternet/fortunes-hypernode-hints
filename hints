@@ -1,0 +1,9 @@
+Hypernode Hint #1: You can see real time PHP-FPM requests with livefpm.
+%
+Hypernode Hint #2: Try singing to your Hypernode to make it run faster! It might not work but you never know.
+%
+Hypernode Hint #3: Use livelog to see recent events, such as backups and xgrades live on your Hypernode.
+%
+Hypernode Hint #4: Please read the available documentation at https://support.hypernode.com
+%
+Hypernode Hint #6: You can see which PHP processes are taking a long time to complete in /var/log/php-fpm/php-slow.log

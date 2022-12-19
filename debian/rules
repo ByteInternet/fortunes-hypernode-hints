@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	strfile hints
+
+override_dh_auto_install:
+	install -m 0755 -d $(CURDIR)/debian/tmp/usr/share/games/fortunes
+	install -m 0644 hints \
+		$(CURDIR)/debian/tmp/usr/share/games/fortunes/hypernode-hints
+	install -m 0644 hints.dat \
+		$(CURDIR)/debian/tmp/usr/share/games/fortunes/hypernode-hints.dat
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f *.dat
