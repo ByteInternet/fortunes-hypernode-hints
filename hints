@@ -24,7 +24,7 @@ Hypernode Hint #13: You can use varnishstat to see stats about your Varnish proc
 %
 Hypernode Hint #14: You can run redis-cli info to get stats about your Redis process.
 %
-Hypernode Hint #15: You can run --help on each of the sub-commands. Like hypernode-systemctl xgrade --help.
+Hypernode Hint #15: You can run --help on each of the sub-commands of hypernode-systemctl. Like hypernode-systemctl xgrade --help.
 %
 Hypernode Hint #16: Configure settings like PHP version with hypernode-systemctl settings php_version 8.1.
 %
@@ -135,3 +135,135 @@ Hypernode Hint #68: You can trigger a pre-install of a variety of applications u
 Hypernode Hint #69: You can run pdstatus to find out quickly if the status of the server is OK.
 %
 Hypernode Hint #70: You can run the editor command to specify your default editor.
+%
+Hypernode Hint #71: Do you have any hints to share yourself? You can create a pull request here https://github.com/ByteInternet/fortunes-hypernode-hints.
+%
+Hypernode Hint #72: Input the Konami code on your keyboard in the Hypernode Control Panel for a flying robot!
+%
+Hypernode Hint #73: Instead of running long running processes in a cron, check out supervisord. See hypernode-systemctl settings supervisor_enabled.
+%
+Hypernode Hint #74: For testing purposes, you can catch the mail your node is sending with mailhog. See hypernode-systemctl settings mailhog_enabled.
+%
+Hypernode Hint #75: Did you know you can ask support to change the innodb_buffer_pool_size? By default we base this on a percentage of available system memory.
+%
+Hypernode Hint #76: The systemwide composer version can be set with hypernode-systemctl settings composer_version <version>.
+%
+Hypernode Hint #77: The systemwide nodejs version can be set with hypernode-systemctl settings nodejs_version <version>.
+%
+Hypernode Hint #78: A variety of magerun2 versions can be configured with hypernode-systemctl settings magerun2_version <version>.
+%
+Hypernode Hint #79: Hypernode has it's own collection of Magerun addons. See https://github.com/Hypernode/hypernode-magerun.
+%
+Hypernode Hint #80: Did you know you can query the Hypernode API for the next plan in line based on your current plan?
+%
+Hypernode Hint #81: Did you know you can query the Hypernode API for the next plan in line based on your current plan?
+%
+Hypernode Hint #82: To completely block FTP access you can run hypernode-systemctl settings firewall_block_ftp_enabled True.
+%
+Hypernode Hint #83: You can configure New Relic from the commandline. See hypernode-systemctl settings |& grep new_relic.
+%
+Hypernode Hint #84: You can configure Blackfire from the commandline. See hypernode-systemctl settings |& grep blackfire.
+%
+Hypernode Hint #85: If you would like the Hypernode out of memory killer to be a bit less trigger-happy, see the permissive_memory_management setting.
+%
+Hypernode Hint #86: On Hypernode you need to edit the NGINX files in /data/web/nginx, not in /etc/nginx.
+%
+Hypernode Hint #87: Alternative webroots can be configured for your vhosts using hypernode-manage-vhosts.
+%
+Hypernode Hint #88: You can create new vhosts with hypernode-manage-vhosts. See --list for current vhosts.
+%
+Hypernode Hint #89: Slow MySQL queries can be inspected in /var/log/mysql-slow.log.
+%
+Hypernode Hint #90: If you think your server may have gone out of memory, check dmesg -T | grep killed -i.
+%
+Hypernode Hint #91: On a cloud Hypernode if you change your plan to a plan at the same cloud provider, your IP will remain the same.
+%
+Hypernode Hint #92: If you change your plan to a plan at the same cloud provider with the same disk size, the plan change will go fast.
+%
+Hypernode Hint #93: On cloud, a backup Hypernode is automatically booted if the monitoring reports issues. This is rarely used, but it's there if it's needed.
+%
+Hypernode Hint #94: The Hypernode autohealing procedure restarts stuck services if necessary.
+%
+Hypernode Hint #95: Every week we analyze the on-call alerts to find patterns to automate in our autohealing procedure.
+%
+Hypernode Hint #96: Every week we analyze the on-call alerts to find patterns to automate in our autohealing procedure.
+%
+Hypernode Hint #97: The Hypernode autohealing automatically detects various known bot patterns and automatically blocks them in your NGINX.
+%
+Hypernode Hint #98: If a user refreshes a page many times on a webshop on Hypernode, only the latest request will continue processing in PHP-FPM.
+%
+Hypernode Hint #99: You can configure the bot ratelimiter to make '429 Too Many requests' less common. Watch out though, it's there for a reason!
+%
+Hypernode Hint #100: Keep an eye on the changelog for updates to the Hypernode platform. See https://changelog.hypernode.com/.
+%
+Hypernode Hint #101: If you use Slack, you can use RSS to automatically get updates from the Hypernode changelog.hypernode.com directly in your chat.
+%
+Hypernode Hint #102: Use a CNAME to your Hypernode hostname to prevent problems in your site if the server IP changes.
+%
+Hypernode Hint #103: Connect remotely to your database safely using TLS. You can force TLS for a user with alter user 'user'@'somehost' REQUIRE SSL;
+%
+Hypernode Hint #104: In a MySQL shell you can check if you are connected using TLS by running SHOW STATUS LIKE "Ssl_cipher";
+%
+Hypernode Hint #105: You can only upgrade MySQL versions, not downgrade them.
+%
+Hypernode Hint #106: On Hypernode you can automatically upgrade your MySQL version. See hypernode-systemctl settings mysql_version.
+%
+Hypernode Hint #107: The Hypernode autohealing can detect it if you have too many MySQL connections. If this happens, it will report this via email.
+%
+Hypernode Hint #108: On Hypernode cron jobs are automatically randomized with a deterministic sleep to prevent a thundering herd.
+%
+Hypernode Hint #109: On Hypernode cron jobs are automatically flocked to prevent duplicate processes.
+%
+Hypernode Hint #110: If you don't want a specific cron to be flocked, you can append #noflock that line in your crontab.
+%
+Hypernode Hint #111: If you have a varied but predicatable visitors pattern in your shop, consider automating upgrades and downgrades using the Hypernode API.
+%
+Hypernode Hint #112: If your shop goes down because your Redis is full, the Hypernode autohealing will detect this and send you an email.
+%
+Hypernode Hint #113: There is a bug in specific Magento versions where the /tmp/analytics dir grows indefinitely. The autohealing detects this and notifies you.
+%
+Hypernode Hint #114: The Hypernode autohealing will try to free up space in /tmp if necessary. See hypernode-purge-tmp3 --help.
+%
+Hypernode Hint #115: If you want to clean up the /tmp directory until a certain amount of storage is available run hypernode-purge-tmp3 --minfree <AMOUNT OF MB>.
+%
+Hypernode Hint #116: MySQL on Hypernode is started with an OOM score of -1000, which means it is never out of memory killed.
+%
+Hypernode Hint #117: If you experience a business-critical disruption outside of office hours, see emergency.hypernode.com.
+%
+Hypernode Hint #118: Keep yourself posted on the status of the Hypernode platform, subscribe to updates on www.hypernode-status.com.
+%
+Hypernode Hint #119: In the control panel you can link your domain to a Hypernode to make sure IP changes are automatically applied through DNS.
+%
+Hypernode Hint #120: A common reason for downtime is misconfigured NGINX and Let's Encrypt validation. Managed SSL in the control panel can be a solution.
+%
+Hypernode Hint #121: On Hypernode, Elasticsearch should only be used for ephemeral data like the catalogsearch in Magento, not as a database.
+%
+Hypernode Hint #122: When you change the PHP version of your Hypernode, the WSDL cache is automatically cleared.
+%
+Hypernode Hint #123: If your workload is I/O bound due to MySQL, consider offloading your database to a separate Hypernode.
+%
+Hypernode Hint #124: If you need to run a PWA application for your front-end, consider using supervisor.
+%
+Hypernode Hint #125: Looking to shrink the footprint of the images in your shop? Check out hypernode-image-optimizer --help.
+%
+Hypernode Hint #126: You will receive automated emails if your disk is about to reach full capacity.
+%
+Hypernode Hint #127: To get some quick information about a Magento installation, run hypernode-diagnostic.
+%
+Hypernode Hint #128: Run 'sf2' in a Magento 2 directory to quickly get the base url. This is an alias for n98-magerun2 sys:store:config:base-url:list.
+%
+Hypernode Hint #129: Run 'sf' in a Magento directory to quickly get the base url. This is an alias for n98-magerun sys:store:config:base-url:list.
+%
+Hypernode Hint #130: To view the available fields the NGINX logparsing utility hypernode-parse-nginx-log can filter on, run pnl --list-fields.
+%
+Hypernode Hint #130: The pnl utility can help you parse NGINX logs quickly. For example cat /var/log/nginx/access.log | pnl --fields remote_addr,request,status.
+%
+Hypernode Hint #131: On Hypernode the NGINX logs contain handy fields such as country for the location for the request IP.
+%
+Hypernode Hint #132: Using tal | pnl --fields request,handler you can see what requests go through PHP-FPM. Those are usually CPU intensive.
+%
+Hypernode Hint #133: Use tal | pnl --apache to output the NGINX access log in the NCSA Common Log Format.
+%
+Hypernode Hint #134: Use hypernode-fpm-slow-modules3 --cms magento_2 to spot slow modules in Magento 2.
+%
+Hypernode Hint #135: On www.magereport.com you can scan your Magento shop for known vulnerabilities.
