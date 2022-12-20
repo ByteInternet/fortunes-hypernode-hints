@@ -7,3 +7,131 @@ Hypernode Hint #3: Use livelog to see recent events, such as backups and xgrades
 Hypernode Hint #4: Please read the available documentation at https://support.hypernode.com.
 %
 Hypernode Hint #6: You can see which PHP processes are taking a long time to complete in /var/log/php-fpm/php-slow.log.
+%
+Hypernode Hint #7: The livefpm command is an alias for running hypernode-fpm-status in a loop.
+%
+Hypernode Hint #8: Run livereqs to see the web-requests in real time on your Hypernode.
+%
+Hypernode Hint #9: If a PHP-FPM process is GONE in livefpm it means the client has already disconnected.
+%
+Hypernode Hint #10: GONE in livefpm means the user has already clicked away or refreshed that page.
+%
+Hypernode Hint #11: Not all hits that show up in livereqs show up in livefpm, that is because not all traffic goes through PHP-FPM.
+%
+Hypernode Hint #12: You can use varnishhist to see the hitrate of your Varnish process.
+%
+Hypernode Hint #13: You can use varnishstat to see stats about your Varnish process if you run Varnish.
+%
+Hypernode Hint #14: You can run redis-cli info to get stats about your Redis process.
+%
+Hypernode Hint #15: You can run --help on each of the sub-commands. Like hypernode-systemctl xgrade --help.
+%
+Hypernode Hint #16: Configure settings like PHP version with hypernode-systemctl settings php_version 8.1.
+%
+Hypernode Hint #17: You can see what setting is configured for a specific value by running hypernode-systemctl settings php_version.
+%
+Hypernode Hint #18: You can use --block in hypernode-systemctl settings to wait for the setting change to complete.
+%
+Hypernode Hint #19: Check out what MySQL start-up configuration settings can be configured by running hypernode-systemctl settings |& grep mysql.
+%
+Hypernode Hint #20: A second Redis instance can be started for sessions. See the redis_persistent_instance setting.
+%
+Hypernode Hint #21: The redis_persistent_instance Redis has a different eviction policy than the Redis for cache. It is suited for sessions.
+%
+Hypernode Hint #22: If you enable redis_persistent_instance your normal Redis memory is halved and reallocated to the second Redis.
+%
+Hypernode Hint #23: You can set the Redis version with hypernode-systemctl settings redis_version (6.x for example).
+%
+Hypernode Hint #24: Did you know that hypernode-systemctl talks directly to the Hypernode API?
+%
+Hypernode Hint #25: Did you know there is a Hypernode API client in PHP? Check it out on https://github.com/ByteInternet/hypernode-api-php.
+%
+Hypernode Hint #26: Did you know there is a Hypernode API client in Python? Check it out on https://github.com/ByteInternet/hypernode-api-python.
+%
+Hypernode Hint #27: NGINX configs in /data/web/nginx are automatically loaded once saved, deleted, touched or moved.
+%
+Hypernode Hint #28: If your NGINX config is invalid a file will appear in /data/web/ngin/nginx_error_output with the error.
+%
+Hypernode Hint #29: The nginx_config_reloader is open source. Check it out on GitHub to understand how it works! https://github.com/ByteInternet/nginx_config_reloader.
+%
+Hypernode Hint #30: You can run a local Hypernode on your computer with hypernode-docker. See https://github.com/byteinternet/hypernode-docker.
+%
+Hypernode Hint #31: Hypernode-docker can be used for testing out server configuration changes on your local computer in a safe environment.
+%
+Hypernode Hint #32: The hypernode-importer can be used to import a shop from another server, or even from another Hypernode.
+%
+Hypernode Hint #33: If you run screenfetch a nice Hypernode robot will tell you all about your specs!
+%
+Hypernode Hint #34: Whenever your PHP-FPM workers fill up a directory is created in /data/web/incidents with information about that moment.
+%
+Hypernode Hint #35: In /data/web/incidents you can find information about the system from moments where this Hypernode was overloaded.
+%
+Hypernode Hint #36: In /data/web/incidents you can find information about the system from moments where this Hypernode was overloaded.
+%
+Hypernode Hint #37: You can inspect the syscalls of a process owned by the app user with strace. Try strace -p <pid>.
+%
+Hypernode Hint #38: Stracing the PHP-FPM processes can be helpful for debugging. Try strace -p <pid> -s 99 -f.
+%
+Hypernode Hint #39: Did you know you can enable xdebug for debugging? See hypernode-systemctl settings.
+%
+Hypernode Hint #40: Did you know you can list your snapshot backups with hypernode-systemctl list_backups?
+%
+Hypernode Hint #41: You can easily block known bot attacks with hypernode-systemctl block_attack.
+%
+Hypernode Hint #42: You can automatically configure NGINX to block various attacks by for example running hypernode-systemctl block_attack BlockSqliBruteForce.
+%
+Hypernode Hint #43: If your Hypernode becomes unresponsive the autohealing kicks in.
+%
+Hypernode Hint #44: If you see emergency_rescue in hypernode-log that means the autohealing procedure was performed.
+%
+Hypernode Hint #45: Did you know you get an automated email if a large logfile is found in your installation?
+%
+Hypernode Hint #46: The Hypernode checks if you have Magento 2 caches that are disabled today that were enabled yesterday and then emails you about it.
+%
+Hypernode Hint #47: You can run hypernode-webapp-status --cache --verbose to see if your Magento 2 cache status has changed.
+%
+Hypernode Hint #48: Use hypernode-systemctl brancher to create a copy of your Hypernode to a temporary test Hypernode.
+%
+Hypernode Hint #49: You can use hypernode-systemctl brancher --list to list all your Brancher nodes.
+%
+Hypernode Hint #50: You can use hypernode-systemctl brancher --delete <id> to delete a Brancher node.
+%
+Hypernode Hint #51: Have you seen the official Hypernode Deploy tool yet? See https://github.com/ByteInternet/hypernode-deploy-configuration.
+%
+Hypernode Hint #52: Hypernode Deploy can use Hypernode Brancher to set up a Hypernode acceptance environment for each pull request in your version control.
+%
+Hypernode Hint #53: Did you know that hypernode-manage-vhosts has many different vhost types? See the --help menu.
+%
+Hypernode Hint #54: You can see what domains this Hypernode is mailing from by running hypernode-mail-status domains.
+%
+Hypernode Hint #55: Items can be deleted from the mailq with hypernode-postsuper -d <id>.
+%
+Hypernode Hint #56: Keeping your Hypernode tidy in terms of unnecessary storage usage makes plan changes and backups run faster.
+%
+Hypernode Hint #57: Backup restores and some plan changes can be performed faster if you have less storage in use.
+%
+Hypernode Hint #58: Run iostat -mx 1 to get a sense of your disk utilization. The util % is a good metric to look at when your shop is busy.
+%
+Hypernode Hint #59: You can run myprocs to see what MySQL queries are running at the moment.
+%
+Hypernode Hint #60: The ncdu utility can be used to find out where a lot of disk storage is being used.
+%
+Hypernode Hint #61: You can restart services like mysql, php-fpm and nginx yourself using hypernode-servicectl.
+%
+Hypernode Hint #62: Did you know you can restart MySQL with hypernode-servicectl restart mysql?
+%
+Hypernode Hint #63: Did you know you can restart Redis with hypernode-servicectl restart redis-server?
+%
+Hypernode Hint #64: Check out hypernode-auto-logrotate for finding large logfiles and setting up logrotation automatically.
+%
+Hypernode Hint #65: Did you know you can upgrade or downgrade your Hypernode from the command-line? See hypernode-systemctl xgrade.
+%
+Hypernode Hint #66: You can schedule a plan upgrade or downgrade for a later time either from the command-line or from the control panel.
+%
+Hypernode Hint #67: See hypernode-systemctl xgrade --help for the --scheduled-at functionality. With that you can schedule a plan change.
+%
+Hypernode Hint #68: You can trigger a pre-install of a variety of applications using hypernode-systemctl preinstall. It may fail if there is already an application on the server.
+%
+Hypernode Hint #69: You can run pdstatus to find out quickly if the status of the server is OK.
+%
+Hypernode Hint #70: You can run the editor command to specify your default editor.
