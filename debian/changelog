@@ -1,11 +1,12 @@
-fortunes-hypernode-hints (20221220.085245) UNRELEASED; urgency=medium
+fortunes-hypernode-hints (20221221.064926) UNRELEASED; urgency=medium
 
   [ Rick van de Loo ]
   * end each hint as a sentence
   * add mark-release.sh script
   * add more hypernode hints
+  * add even more hypernode hints
 
- -- Hypernode team <hypernode@byte.nl>  Tue, 20 Dec 2022 08:52:46 +0000
+ -- Hypernode team <hypernode@byte.nl>  Wed, 21 Dec 2022 06:49:27 +0000
 
 fortunes-hypernode-hints (20221119.074500) unstable; urgency=medium
 
