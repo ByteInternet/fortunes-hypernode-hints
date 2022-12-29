@@ -1,12 +1,13 @@
-fortunes-hypernode-hints (20221221.064926) UNRELEASED; urgency=medium
+fortunes-hypernode-hints (20221229.114348) UNRELEASED; urgency=medium
 
   [ Rick van de Loo ]
   * end each hint as a sentence
   * add mark-release.sh script
   * add more hypernode hints
   * add even more hypernode hints
+  * add hypernode-hint about crontabs_xgrade_backup
 
- -- Hypernode team <hypernode@byte.nl>  Wed, 21 Dec 2022 06:49:27 +0000
+ -- Hypernode team <hypernode@byte.nl>  Thu, 29 Dec 2022 11:43:48 +0000
 
 fortunes-hypernode-hints (20221119.074500) unstable; urgency=medium
 
