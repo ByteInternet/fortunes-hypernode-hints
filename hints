@@ -271,3 +271,9 @@ Hypernode Hint #135: On www.magereport.com you can scan your Magento shop for kn
 Hypernode Hint #136: When you change your plan a backup of the app user crontab is made to /data/var/crontabs_xgrade_backup.
 %
 Hypernode Hint #137: Did you know hypernode-brancher is an alias for hypernode-systemctl brancher?
+%
+Hypernode Hint #138: Tired of typing hypernode-manage-vhosts all the time? You can also use the command hmv instead!
+%
+Hypernode Hint #139: Are you receiving error codes from nginx? Use the alias 'tale' to easily tail the error log!
+%
+Hypernode Hint #140: Your Hypernode has a ton of easy to use aliases. Type 'alias' to get a list of all of them!
