@@ -269,3 +269,5 @@ Hypernode Hint #134: Use hypernode-fpm-slow-modules3 --cms magento_2 to spot slo
 Hypernode Hint #135: On www.magereport.com you can scan your Magento shop for known vulnerabilities.
 %
 Hypernode Hint #136: When you change your plan a backup of the app user crontab is made to /data/var/crontabs_xgrade_backup.
+%
+Hypernode Hint #137: Did you know hypernode-brancher is an alias for hypernode-systemctl brancher?
