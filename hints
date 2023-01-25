@@ -277,3 +277,5 @@ Hypernode Hint #138: Tired of typing hypernode-manage-vhosts all the time? You c
 Hypernode Hint #139: Are you receiving error codes from nginx? Use the alias 'tale' to easily tail the error log!
 %
 Hypernode Hint #140: Your Hypernode has a ton of easy to use aliases. Type 'alias' to get a list of all of them!
+%
+Hypernode Hint #141: Run `hypernode-manual` or `man hypernode` to read the docs straight from the commandline.
