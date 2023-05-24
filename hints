@@ -172,7 +172,7 @@ Hypernode Hint #87: Alternative webroots can be configured for your vhosts using
 %
 Hypernode Hint #88: You can create new vhosts with hypernode-manage-vhosts. See --list for current vhosts.
 %
-Hypernode Hint #89: Slow MySQL queries can be inspected in /var/log/mysql-slow.log.
+Hypernode Hint #89: Slow MySQL queries can be inspected in /var/log/mysql/mysql-slow.log.
 %
 Hypernode Hint #90: If you think your server may have gone out of memory, check dmesg -T | grep killed -i.
 %
