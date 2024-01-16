@@ -186,7 +186,7 @@ Hypernode Hint #94: The Hypernode autohealing procedure restarts stuck services 
 %
 Hypernode Hint #95: Every week we analyze the on-call alerts to find patterns to automate in our autohealing procedure.
 %
-Hypernode Hint #96: Every week we analyze the on-call alerts to find patterns to automate in our autohealing procedure.
+Hypernode Hint #96: The Hypernode platform supports frameworks like Laravel and Symfony as well!
 %
 Hypernode Hint #97: The Hypernode autohealing automatically detects various known bot patterns and automatically blocks them in your NGINX.
 %
@@ -256,26 +256,32 @@ Hypernode Hint #129: Run 'sf' in a Magento directory to quickly get the base url
 %
 Hypernode Hint #130: To view the available fields the NGINX logparsing utility hypernode-parse-nginx-log can filter on, run pnl --list-fields.
 %
-Hypernode Hint #130: The pnl utility can help you parse NGINX logs quickly. For example cat /var/log/nginx/access.log | pnl --fields remote_addr,request,status.
+Hypernode Hint #131: The pnl utility can help you parse NGINX logs quickly. For example cat /var/log/nginx/access.log | pnl --fields remote_addr,request,status.
 %
-Hypernode Hint #131: On Hypernode the NGINX logs contain handy fields such as country for the location for the request IP.
+Hypernode Hint #132: On Hypernode the NGINX logs contain handy fields such as country for the location for the request IP.
 %
-Hypernode Hint #132: Using tal | pnl --fields request,handler you can see what requests go through PHP-FPM. Those are usually CPU intensive.
+Hypernode Hint #133: Using tal | pnl --fields request,handler you can see what requests go through PHP-FPM. Those are usually CPU intensive.
 %
-Hypernode Hint #133: Use tal | pnl --apache to output the NGINX access log in the NCSA Common Log Format.
+Hypernode Hint #134: Use tal | pnl --apache to output the NGINX access log in the NCSA Common Log Format.
 %
-Hypernode Hint #134: Use hypernode-fpm-slow-modules3 --cms magento_2 to spot slow modules in Magento 2.
+Hypernode Hint #135: Use hypernode-fpm-slow-modules3 --cms magento_2 to spot slow modules in Magento 2.
 %
-Hypernode Hint #135: On www.magereport.com you can scan your Magento shop for known vulnerabilities.
+Hypernode Hint #136: On www.magereport.com you can scan your Magento shop for known vulnerabilities.
 %
-Hypernode Hint #136: When you change your plan a backup of the app user crontab is made to /data/var/crontabs_xgrade_backup.
+Hypernode Hint #137: When you change your plan a backup of the app user crontab is made to /data/var/crontabs_xgrade_backup.
 %
-Hypernode Hint #137: Did you know hypernode-brancher is an alias for hypernode-systemctl brancher?
+Hypernode Hint #138: Did you know hypernode-brancher is an alias for hypernode-systemctl brancher?
 %
-Hypernode Hint #138: Tired of typing hypernode-manage-vhosts all the time? You can also use the command hmv instead!
+Hypernode Hint #139: Tired of typing hypernode-manage-vhosts all the time? You can also use the command hmv instead!
 %
-Hypernode Hint #139: Are you receiving error codes from nginx? Use the alias 'tale' to easily tail the error log!
+Hypernode Hint #140: Are you receiving error codes from nginx? Use the alias 'tale' to easily tail the error log!
 %
-Hypernode Hint #140: Your Hypernode has a ton of easy to use aliases. Type 'alias' to get a list of all of them!
+Hypernode Hint #141: Your Hypernode has a ton of easy to use aliases. Type 'alias' to get a list of all of them!
 %
-Hypernode Hint #141: Run `hypernode-docs` or `man hypernode` to read the docs straight from the commandline.
+Hypernode Hint #142: Run `hypernode-docs` or `man hypernode` to read the docs straight from the commandline.
+%
+Hypernode Hint #143: You can configure Tideways from the commandline. See hypernode-systemctl settings |& grep tideways.
+%
+Hypernode Hint #144: You can easily connect to your debugging session with Xdebug Cloud. See hypernode-systemctl settings |& grep xdebug.
+%
+Hypernode Hint #145: You can easily switch from ElasticSearch to OpenSearch by running hypernode-systemctl settings opensearch_enabled True
