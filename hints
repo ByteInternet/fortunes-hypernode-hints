@@ -285,3 +285,5 @@ Hypernode Hint #143: You can configure Tideways from the commandline. See hypern
 Hypernode Hint #144: You can easily connect to your debugging session with Xdebug Cloud. See hypernode-systemctl settings |& grep xdebug.
 %
 Hypernode Hint #145: You can easily switch from ElasticSearch to OpenSearch by running hypernode-systemctl settings opensearch_enabled True
+%
+Hypernode Hint #146: You can use the `statuslog` alias to investigate historic monitoring status results. Look for entries with 'false'.
