@@ -50,7 +50,7 @@ Hypernode Hint #26: Did you know there is a Hypernode API client in Python? Chec
 %
 Hypernode Hint #27: NGINX configs in /data/web/nginx are automatically loaded once saved, deleted, touched or moved.
 %
-Hypernode Hint #28: If your NGINX config is invalid a file will appear in /data/web/ngin/nginx_error_output with the error.
+Hypernode Hint #28: If your NGINX config is invalid a file will appear in /data/web/nginx/nginx_error_output with the error.
 %
 Hypernode Hint #29: The nginx_config_reloader is open source. Check it out on GitHub to understand how it works! https://github.com/ByteInternet/nginx_config_reloader.
 %
