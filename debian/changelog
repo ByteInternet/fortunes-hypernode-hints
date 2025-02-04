@@ -1,4 +1,4 @@
-fortunes-hypernode-hints (20240116.105632) UNRELEASED; urgency=medium
+fortunes-hypernode-hints (20250204.064034) UNRELEASED; urgency=medium
 
   [ Rick van de Loo ]
   * end each hint as a sentence
@@ -23,7 +23,16 @@ fortunes-hypernode-hints (20240116.105632) UNRELEASED; urgency=medium
   [ Timon de Groot ]
   * Add hints
 
- -- Hypernode team <hypernode@byte.nl>  Tue, 16 Jan 2024 10:56:33 +0000
+  [ Rick van de Loo ]
+  * add hint for statuslog
+
+  [ Timon de Groot ]
+  * Fix typo for hint #28
+
+  [ Jonathan Visser ]
+  * add small tweaks for existant hints
+
+ -- Hypernode team <hypernode@byte.nl>  Tue, 04 Feb 2025 06:40:34 +0000
 
 fortunes-hypernode-hints (20221119.074500) unstable; urgency=medium
 
