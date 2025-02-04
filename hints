@@ -4,7 +4,7 @@ Hypernode Hint #2: Try singing to your Hypernode to make it run faster! It might
 %
 Hypernode Hint #3: Use livelog to see recent events, such as backups and xgrades live on your Hypernode.
 %
-Hypernode Hint #4: Please read the available documentation at https://support.hypernode.com.
+Hypernode Hint #4: Please read the available documentation at https://docs.hypernode.com.
 %
 Hypernode Hint #6: You can see which PHP processes are taking a long time to complete in /var/log/php-fpm/php-slow.log.
 %
@@ -26,7 +26,7 @@ Hypernode Hint #14: You can run redis-cli info to get stats about your Redis pro
 %
 Hypernode Hint #15: You can run --help on each of the sub-commands of hypernode-systemctl. Like hypernode-systemctl xgrade --help.
 %
-Hypernode Hint #16: Configure settings like PHP version with hypernode-systemctl settings php_version 8.1.
+Hypernode Hint #16: Configure settings like PHP version with hypernode-systemctl settings php_version 8.3.
 %
 Hypernode Hint #17: You can see what setting is configured for a specific value by running hypernode-systemctl settings php_version.
 %
@@ -62,7 +62,7 @@ Hypernode Hint #32: The hypernode-importer can be used to import a shop from ano
 %
 Hypernode Hint #33: If you run screenfetch a nice Hypernode robot will tell you all about your specs!
 %
-Hypernode Hint #34: Whenever your PHP-FPM workers fill up a directory is created in /data/web/incidents with information about that moment.
+Hypernode Hint #34: Whenever your PHP-FPM workers fill up, a directory is created in /data/web/incidents with information about that moment.
 %
 Hypernode Hint #35: In /data/web/incidents you can find information about the system from moments where this Hypernode was overloaded.
 %
